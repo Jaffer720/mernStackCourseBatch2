@@ -21,9 +21,9 @@ import SignInForm from "./components/Api/SignIn";
 import SignUpForm from "./components/Api/SignUp";
 import CreateHotel from "./components/Api/CreateHotel";
 import Auth from "./components/Api/Auth"
+import Login from "./Login";
 
 import { analytics } from "./Firebase.config";
-
 function App() {
   return (
     <React.Fragment>
@@ -41,8 +41,9 @@ function App() {
         <Route path="/Contact" Component={Contact}/> */}
         <Route path="/auth" element={<Auth/>}/>
         <Route path="/create-hotel" element={<CreateHotel/>}/>
-        <Route path="/Login" element={<SignInForm/>}/>
+        <Route path="/Login" element={<Login/>}/>
         <Route path="/SignUp" element={<SignUpForm/>}/>
+
         {/* <Route path="/Table" Component={Table}/> */}
       </Routes>
       
